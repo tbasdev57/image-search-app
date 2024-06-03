@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: black;
+  --background-start-rgb: white;
+  --background-end-rgb: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: rgb(255, 255, 255);
+    --background-start-rgb: rgb(0, 0, 0);
+    --background-end-rgb: rgb(0, 0, 0);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white; /* Définir le fond en blanc */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
